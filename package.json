@@ -1,0 +1,27 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "webpack --mode production",
+    "build:server": "babel src --out-dir dist --presets @babel/env"
+  },
+  "author": "William Keyes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "webpack": "^5.4.0",
+    "workbox-cli": "^5.1.4"
+  }
+}
